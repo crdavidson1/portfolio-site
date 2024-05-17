@@ -5,8 +5,8 @@ import Typewriter from 'typewriter-effect'
 export default function Home() {
     return (
         <>
-        <div style={{zIndex: '1000', position: 'relative', color:'black', fontSize: '70px'}}>
-            <p>Spring-IT Can Help You</p>
+        <div style={{zIndex: '1000',top: '150px', position: 'absolute', color:'black', fontSize: '70px', backgroundColor: 'white', width: '100%', textAlign: 'center'}}>
+            <p style={{margin: '0'}}>Spring-IT Can Help You</p>
             <Typewriter 
             options={{
                 strings: ['Build a Website', 'Example Service 2', 'Example Service 3'],
@@ -15,7 +15,7 @@ export default function Home() {
             }}
             />
         </div>
-        <div style={{paddingTop: '500px', zIndex: '1', position: 'absolute'}}>
+        <div style={{zIndex: '1', position: 'absolute'}}>
         <Background></Background>
         </div>
         </>
