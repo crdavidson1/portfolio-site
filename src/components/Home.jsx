@@ -5,12 +5,13 @@ import Typewriter from 'typewriter-effect'
 export default function Home() {
     return (
         <>
-        <div style={{zIndex: '1000', position: 'relative', color:'black'}}>
-            <Typewriter options={{
-                string: ['Hello', 'World', '123',],
+        <div style={{zIndex: '1000', position: 'relative', color:'black', fontSize: '70px'}}>
+            <p>Spring-IT Can Help You</p>
+            <Typewriter 
+            options={{
+                strings: ['Build a Website', 'Example Service 2', 'Example Service 3'],
                 autoStart: true,
                 loop: true,
-                delay: 100
             }}
             />
         </div>
