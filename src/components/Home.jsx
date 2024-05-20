@@ -1,6 +1,7 @@
 import logo from '../assets/Davidson ECM Logo.png'
 import Background from './Background'
 import Typewriter from 'typewriter-effect'
+import Services from './Services'
 
 export default function Home() {
     return (
@@ -16,7 +17,10 @@ export default function Home() {
             />
         </div>
         <div style={{zIndex: '1', position: 'absolute'}}>
-        <Background></Background>
+            <Background/>
+        </div>
+        <div style={{zIndex: '1000', top: '100%', position: 'absolute', color:'black', fontSize: '70px', backgroundColor: 'white', width: '100%', textAlign: 'center'}}>
+            <Services/>
         </div>
         </>
     )
