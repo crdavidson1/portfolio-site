@@ -5,7 +5,7 @@ import logo from '../assets/springit.jpeg'
 export default function Header() {
     return (
       <div>
-      <img src={logo} style={{width: 'auto', height: '96px', zIndex: '1000', position: 'fixed', top:'0%', left:'0%', zIndex:'10000'}}/>
+      <img src={logo} style={{width: 'auto', height: '96px', zIndex: 1000, position: 'fixed', top:'0%', left:'0%'}}/>
       <header className="header" style={{}}>
         <nav>
             <ul>

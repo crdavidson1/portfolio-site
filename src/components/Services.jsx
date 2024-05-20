@@ -16,18 +16,24 @@ export default function Services() {
     <Box sx={{ 
       width: '100%',
       bgcolor: 'background.paper',
+      zIndex: 1000, 
+      top: '100%', 
+      position: 'absolute', 
+      color:'black', 
+      fontSize: '70px', 
+      backgroundColor: 'white', 
+      textAlign: 'center',
+      paddingBottom: '290px'
       }}>
       <Typography
         variant="h4"
       >
         Services  
       </Typography>
-      <br></br>
-      <nav aria-label="article list">
         <List>
             <ListItem key={'Service 1'} disablePadding>
-            <Link to={`/services/1`}>
-            <ListItemButton>
+            <Link to={`/services/1`} style={{ width: '100%', display: 'block' }}>
+            <ListItemButton >
                 {/* <ListItemAvatar>
                 <Avatar src={article.article_img_url} />
                 </ListItemAvatar> */}
@@ -64,8 +70,85 @@ export default function Services() {
             </ListItemButton>
             </Link> 
             </ListItem>
+            <ListItem key={'Service 2'} disablePadding>
+            <Link to={`/services/2`} style={{ width: '100%', display: 'block' }}>
+            <ListItemButton >
+                {/* <ListItemAvatar>
+                <Avatar src={article.article_img_url} />
+                </ListItemAvatar> */}
+                <ListItemText
+                primary={'Service 2'}
+                secondary={
+                <React.Fragment>
+                <Typography
+                    component="span"
+                    variant="subtitle1"
+                    color="text.primary"
+                >
+                    Brief Outline
+                </Typography>
+                <Typography
+                    component="span"
+                    variant="body2"
+                    color="text.secondary"
+                >
+                    <br></br> 
+                    Tech Stack
+                </Typography>
+                <Typography
+                    component="span"
+                    variant="body2"
+                    color="text.secondary"
+                >
+                    <br></br>
+                    Example
+                </Typography>
+                </React.Fragment>
+                }
+                />
+            </ListItemButton>
+            </Link> 
+            </ListItem>
+            <ListItem key={'Service 3'} disablePadding>
+            <Link to={`/services/3`} style={{ width: '100%', display: 'block' }}>
+            <ListItemButton >
+                {/* <ListItemAvatar>
+                <Avatar src={article.article_img_url} />
+                </ListItemAvatar> */}
+                <ListItemText
+                primary={'Service 3'}
+                secondary={
+                <React.Fragment>
+                <Typography
+                    component="span"
+                    variant="subtitle1"
+                    color="text.primary"
+                >
+                    Brief Outline
+                </Typography>
+                <Typography
+                    component="span"
+                    variant="body2"
+                    color="text.secondary"
+                >
+                    <br></br> 
+                    Tech Stack
+                </Typography>
+                <Typography
+                    component="span"
+                    variant="body2"
+                    color="text.secondary"
+                >
+                    <br></br>
+                    Example
+                </Typography>
+                </React.Fragment>
+                }
+                />
+            </ListItemButton>
+            </Link> 
+            </ListItem>
         </List>
-      </nav>
     </Box>
   );
 }
