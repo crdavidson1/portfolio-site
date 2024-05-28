@@ -6,7 +6,6 @@ import Home from './components/Home';
 function App() {
   return (
     <>
-      <Header/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="*" element={<Navigate to="/" replace />} />

@@ -11,34 +11,34 @@ import Typography from '@mui/material/Typography';
 
  
 
-export default function Services() {
+export default function Portfolio() {
   return (
-    <Box id='services' sx={{ 
+    <Box id='portfolio' sx={{ 
       width: '100%',
+      bgcolor: 'background.paper',
       zIndex: 1000, 
-      top: '100%', 
+      top: '200%', 
       position: 'absolute', 
       color:'black', 
       fontSize: '70px', 
       backgroundColor: 'white', 
       textAlign: 'center',
-      paddingBottom: '290px',
-      height: '100%'
+      paddingBottom: '290px'
       }}>
       <Typography
         variant="h4"
       >
-        Services  
+        Portfolio  
       </Typography>
         <List>
-            <ListItem key={'Service 1'} disablePadding>
-            <Link to={`/services/1`} style={{ width: '100%', display: 'block' }}>
+            <ListItem key={'Example 1'} disablePadding>
+            <Link to={`/portfolio/1`} style={{ width: '100%', display: 'block' }}>
             <ListItemButton >
                 {/* <ListItemAvatar>
                 <Avatar src={article.article_img_url} />
                 </ListItemAvatar> */}
                 <ListItemText
-                primary={'Service 1'}
+                primary={'Example 1'}
                 secondary={
                 <React.Fragment>
                 <Typography
@@ -70,14 +70,14 @@ export default function Services() {
             </ListItemButton>
             </Link> 
             </ListItem>
-            <ListItem key={'Service 2'} disablePadding>
-            <Link to={`/services/2`} style={{ width: '100%', display: 'block' }}>
+            <ListItem key={'Example 2'} disablePadding>
+            <Link to={`/portfolio/2`} style={{ width: '100%', display: 'block' }}>
             <ListItemButton >
                 {/* <ListItemAvatar>
                 <Avatar src={article.article_img_url} />
                 </ListItemAvatar> */}
                 <ListItemText
-                primary={'Service 2'}
+                primary={'Example 2'}
                 secondary={
                 <React.Fragment>
                 <Typography
@@ -109,14 +109,14 @@ export default function Services() {
             </ListItemButton>
             </Link> 
             </ListItem>
-            <ListItem key={'Service 3'} disablePadding>
-            <Link to={`/services/3`} style={{ width: '100%', display: 'block' }}>
+            <ListItem key={'Example 3'} disablePadding>
+            <Link to={`/portfolio/3`} style={{ width: '100%', display: 'block' }}>
             <ListItemButton >
                 {/* <ListItemAvatar>
                 <Avatar src={article.article_img_url} />
                 </ListItemAvatar> */}
                 <ListItemText
-                primary={'Service 3'}
+                primary={'Example 3'}
                 secondary={
                 <React.Fragment>
                 <Typography

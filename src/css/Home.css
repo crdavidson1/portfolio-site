@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
-#app {
-  font-size: 70px;
-  line-height: 78px;
-  font-weight: 400;
+.typewriter {
   font-family: 'Roboto', sans-serif;
 }
