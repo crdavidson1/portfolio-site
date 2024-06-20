@@ -17,7 +17,7 @@ export default function About() {
       width: '100%',
       bgcolor: 'background.paper',
       zIndex: 1000, 
-      top: '200%', 
+      top: '300%', 
       position: 'absolute', 
       color:'black', 
       fontSize: '70px', 

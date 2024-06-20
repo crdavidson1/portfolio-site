@@ -7,6 +7,7 @@ import Header from './Header'
 import '../css/Home.css'
 import { useRef } from 'react'
 import About from './About'
+import { Link } from 'react-scroll/modules';
 
 
 export default function Home() {
@@ -30,6 +31,9 @@ export default function Home() {
                 loop: true,
             }}
             />
+            <Link to='services' smooth>
+            <button style={{marginTop: '15%', fontSize: '30px'}}>Find out more</button>
+            </Link>
         </div>
         <div style={{zIndex: 1}}>
             <Background/>

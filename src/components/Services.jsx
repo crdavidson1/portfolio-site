@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Link as LinkScroll } from 'react-scroll/modules';
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
@@ -23,7 +24,8 @@ export default function Services() {
       backgroundColor: 'white', 
       textAlign: 'center',
       paddingBottom: '290px',
-      height: '100%'
+      height: '100%',
+      paddingTop: '20px'
       }}>
       <Typography
         variant="h4"
@@ -148,7 +150,127 @@ export default function Services() {
             </ListItemButton>
             </Link> 
             </ListItem>
+            <ListItem key={'Service 4'} disablePadding>
+            <Link to={`/services/4`} style={{ width: '100%', display: 'block' }}>
+            <ListItemButton >
+                {/* <ListItemAvatar>
+                <Avatar src={article.article_img_url} />
+                </ListItemAvatar> */}
+                <ListItemText
+                primary={'Service 4'}
+                secondary={
+                <React.Fragment>
+                <Typography
+                    component="span"
+                    variant="subtitle1"
+                    color="text.primary"
+                >
+                    Brief Outline
+                </Typography>
+                <Typography
+                    component="span"
+                    variant="body2"
+                    color="text.secondary"
+                >
+                    <br></br> 
+                    Tech Stack
+                </Typography>
+                <Typography
+                    component="span"
+                    variant="body2"
+                    color="text.secondary"
+                >
+                    <br></br>
+                    Example
+                </Typography>
+                </React.Fragment>
+                }
+                />
+            </ListItemButton>
+            </Link> 
+            </ListItem>
+            <ListItem key={'Service 5'} disablePadding>
+            <Link to={`/services/5`} style={{ width: '100%', display: 'block' }}>
+            <ListItemButton >
+                {/* <ListItemAvatar>
+                <Avatar src={article.article_img_url} />
+                </ListItemAvatar> */}
+                <ListItemText
+                primary={'Service 5'}
+                secondary={
+                <React.Fragment>
+                <Typography
+                    component="span"
+                    variant="subtitle1"
+                    color="text.primary"
+                >
+                    Brief Outline
+                </Typography>
+                <Typography
+                    component="span"
+                    variant="body2"
+                    color="text.secondary"
+                >
+                    <br></br> 
+                    Tech Stack
+                </Typography>
+                <Typography
+                    component="span"
+                    variant="body2"
+                    color="text.secondary"
+                >
+                    <br></br>
+                    Example
+                </Typography>
+                </React.Fragment>
+                }
+                />
+            </ListItemButton>
+            </Link> 
+            </ListItem>
+            <ListItem key={'Service 6'} disablePadding>
+            <Link to={`/services/6`} style={{ width: '100%', display: 'block' }}>
+            <ListItemButton >
+                {/* <ListItemAvatar>
+                <Avatar src={article.article_img_url} />
+                </ListItemAvatar> */}
+                <ListItemText
+                primary={'Service 6'}
+                secondary={
+                <React.Fragment>
+                <Typography
+                    component="span"
+                    variant="subtitle1"
+                    color="text.primary"
+                >
+                    Brief Outline
+                </Typography>
+                <Typography
+                    component="span"
+                    variant="body2"
+                    color="text.secondary"
+                >
+                    <br></br> 
+                    Tech Stack
+                </Typography>
+                <Typography
+                    component="span"
+                    variant="body2"
+                    color="text.secondary"
+                >
+                    <br></br>
+                    Example
+                </Typography>
+                </React.Fragment>
+                }
+                />
+            </ListItemButton>
+            </Link> 
+            </ListItem>
         </List>
+        <LinkScroll to='portfolio' smooth>
+            <button style={{marginBottom: '5%', fontSize: '30px'}}>Portfolio</button>
+            </LinkScroll>
     </Box>
   );
 }
